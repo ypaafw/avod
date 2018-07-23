@@ -7,4 +7,7 @@ Then sh avod/protos/run_protoc.sh
 modify config_builder_util.py
           output_root_dir = avod.root_dir() + '/data/outputs/' + checkpoint_name
 
+#change the path of prediction
+modify  run_interface.py
+          line119 experiment_config_path ='your outputs path' + args.checkpoint_name + '/' + experiment_config
 
