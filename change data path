@@ -3,11 +3,11 @@ mdofiy  avod/protos/kitti_dataset.proto
                   dataset_dir = 2 [default = " your self path"]
 Then sh avod/protos/run_protoc.sh
 
-#change the path of checkpoint
+#change the save path of checkpoint
 modify config_builder_util.py
           output_root_dir = avod.root_dir() + '/data/outputs/' + checkpoint_name
 
-#change the path of prediction
+#change the read config path of prediction
 modify  run_interface.py
           line119 experiment_config_path ='your outputs path' + args.checkpoint_name + '/' + experiment_config
 
