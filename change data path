@@ -1,5 +1,5 @@
 #change the path of dataset
-mdofiy  avod/protos/kitti_dataset.proto
+modify  avod/protos/kitti_dataset.proto
                   dataset_dir = 2 [default = " your self path"]
 Then sh avod/protos/run_protoc.sh
 
